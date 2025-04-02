@@ -4,17 +4,9 @@ from feedgen.feed import FeedGenerator
 import os
 from datetime import datetime, timezone
 
-# Function to log the current timestamp
-def log_run_time():
-    with open(r"C:\Users\shijzhao\Dropbox\run_log.txt", "a") as log_file:
-        log_file.write(f"Script run at: {datetime.now().isoformat()}\n")
-
-# Call the log function at the beginning of your script
-log_run_time()
-
 # URL of the website you want to scrape
 url = 'https://inews.hket.com/sran001/%E5%85%A8%E9%83%A8?mtc=20080'
-atom_file = r'C:\Users\shijzhao\Dropbox\hket_feed.xml'
+atom_file = 'hket_feed.xml'
 
 # Fetch the existing feed (if it exists)
 existing_links = set()
