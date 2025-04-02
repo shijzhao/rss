@@ -1,5 +1,3 @@
 requests
-bs4 
-feedgen.feed 
-os
-datetime
+bs4
+feedgen
