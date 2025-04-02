@@ -24,7 +24,7 @@ jobs:
           pip install -r requirements.txt  # If you have dependencies
 
       - name: Run script to generate feed
-        run: python your_script.py  # Replace with your script name
+        run: python hknet.py 
 
       - name: Upload feed to GitHub Releases
         uses: softprops/action-gh-release@v1
