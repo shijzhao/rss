@@ -33,5 +33,5 @@ jobs:
           tag_name: v1.0.0  # Use a versioning scheme, increment as needed
           files: hket_feed.xml
         env:
-          GITHUB_TOKEN: ${{ secrets.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 }}
+          GITHUB_TOKEN: ${{ secrets.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 }}
           GITHUB_REPOSITORY: ${{ github.repository }}       
