@@ -24,7 +24,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run script to generate feed
-        run: python your_script.py  # Replace with your script name
+        run: python hknet.py  # Replace with your script name
 
       - name: Create a new release
         id: create_release
