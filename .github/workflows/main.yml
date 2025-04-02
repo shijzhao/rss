@@ -24,13 +24,13 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run script to generate feed
-        run: python hknet.py  # Replace with your script name
-
+        run: python hknet.py  
+        
       - name: Create a new release
         id: create_release
         uses: softprops/action-gh-release@v1
         with:
-          tag: v1.0.0  # Use a versioning scheme, increment as needed
+          tag_name: v1.0.0  # Use a versioning scheme, increment as needed
           files: hket_feed.xml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
